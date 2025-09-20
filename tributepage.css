@@ -1,18 +1,16 @@
-/* Reset basic styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Page background */
 body {
     background-color: #f5f5f5;
     font-family: 'Roboto', sans-serif;
     color: #333;
 }
 
-/* Header styling */
 header {
     background-color: #552583;
     color: white;
@@ -31,7 +29,6 @@ header h3 {
     font-weight: 300;
 }
 
-/* Content container */
 .content {
     max-width: 800px;
     margin: 0 auto;
@@ -43,7 +40,6 @@ header h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Image styling */
 .portrait {
     max-width: 300px;
     width: 100%;
@@ -54,7 +50,6 @@ header h3 {
     margin: 0 auto 30px auto;
 }
 
-/* Headings */
 h2 {
     font-family: 'Oswald', sans-serif;
     color: #552583;
@@ -65,7 +60,6 @@ h2 {
     padding-bottom: 8px;
 }
 
-/* Paragraphs */
 p {
     font-size: 1.1em;
     line-height: 1.7;
@@ -73,7 +67,6 @@ p {
     color: #555;
 }
 
-/* Ordered list styling */
 ol {
     margin-left: 30px;
     margin-bottom: 25px;
@@ -88,7 +81,6 @@ ol li {
     list-style-type: decimal;
 }
 
-/* Unordered list styling */
 ul {
     margin-left: 30px;
     margin-bottom: 25px;
@@ -103,7 +95,6 @@ ul li {
     list-style-type: circle;
 }
 
-/* Links styling */
 a {
     color: #552583;
     text-decoration: none;
@@ -116,7 +107,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Button styling */
 .btn {
     background-color: #FDB927;
     color: #552583;
