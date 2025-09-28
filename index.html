@@ -3,49 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple web-site</title>
+    <title>My site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>AITU Front-End Assignments</h1>
-    </div>
+    <header class="header">
+        <div class="logo">My logo</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-    <div class="nav">
-        <div class="nav-link"><a href="index.html">Home</a></div>
-        <div class="nav-link"><a href="tributepage.html">Tribute Page</a></div>
-        <div class="nav-link"><a href="task3.html">Table & Form</a></div>
-        <div class="nav-link"><a href="#contact">Contact</a></div>
-    </div>
-
-    <div class="container">
-        <div class="sidebar">
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tributepage.html">Tribute Page</a></li>
-                <li><a href="task3.html">Table & Form</a></li>
-                <li><a href="#about">About Me</a></li>
-            </ul>
+    <section class="card-row">
+        <div class="card">
+            <img src="https://picsum.photos/300/180?random=1" alt="Card 1">
+            <h3>Beautiful Nature</h3>
+            <p>Explore stunning landscapes and natural beauty</p>
+            <button>Learn More</button>
         </div>
 
-        <div class="main-content">
-            <h2>Welcome to AITU Front-End Assignments</h2>
-            <p>This website contains my front-end development assignments and projects for AITU University. Here you can explore different web development exercises that demonstrate HTML, CSS, and JavaScript skills.</p>
-            
-            <h3>Current Projects:</h3>
-            <ul>
-                <li><strong>Tribute Page:</strong> A tribute page dedicated to Kobe Bryant, showcasing HTML structure and CSS styling fundamentals. <a href="tributepage.html">View Project →</a></li>
-                <li><strong>Table & Form:</strong> Student grades table with CSS styling and feedback form with various input types. <a href="task3.html">View Project →</a></li>
-                <li><strong>More projects coming soon...</strong></li>
-            </ul>
-            
-            <p>Each project demonstrates different aspects of web development including responsive design, semantic HTML, CSS styling, and user interaction.</p>
+        <div class="card">
+            <img src="https://picsum.photos/300/180?random=2" alt="Card 2">
+            <h3>Urban Architecture</h3>
+            <p>Discover modern cityscapes and architectural wonders</p>
+            <button>Learn More</button>
         </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/180?random=3" alt="Card 3">
+            <h3>Technology & Innovation</h3>
+            <p>Stay updated with the latest technological advances</p>
+                <button>Read More</button>
+        </div>
+</section>
+    <div class="grid-container">
+        <header class="header"></header>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="main-content">Main Content</main>
+        <footer class="footer">Gallery</footer>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2025 AITU Front-End Assignments. All rights reserved.</p>
-    </div>
+<section class="gallery">
+    <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=4" alt="Mountain Landscape">
+    <div class="caption">Mountain Vista</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=5" alt="Ocean View">
+    <div class="caption">Ocean Waves</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=6" alt="Forest Path">
+    <div class="caption">Forest Trail</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=7" alt="City Lights">
+    <div class="caption">City at Night</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=8" alt="Desert Sunset">
+    <div class="caption">Desert Sunset</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=9" alt="Snowy Mountains">
+    <div class="caption">Snow Peaks</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=10" alt="Tropical Beach">
+    <div class="caption">Tropical Paradise</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=11" alt="Autumn Forest">
+    <div class="caption">Autumn Colors</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://picsum.photos/300/300?random=12" alt="Urban Skyline">
+    <div class="caption">City Skyline</div>
+</section>
 </body>
 </html>
