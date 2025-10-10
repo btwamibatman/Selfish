@@ -1,4 +1,4 @@
-# LegalPro Services - Professional Legal Website
+# Qorgau - Professional Legal Website
 
 A comprehensive, responsive multi-page website for a legal services firm built with HTML5, CSS3, and Bootstrap 5. This project demonstrates modern web development practices including semantic HTML, advanced CSS styling, responsive design, and accessibility features.
 
