@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LegalPro Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-balance-scale me-2"></i>LegalPro Services
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Contact Us</h1>
+                    <p class="lead">Get in touch with our legal experts today</p>
+                </div>
+                <div class="col-lg-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-card text-center p-4 h-100 bg-white shadow-sm rounded">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Office Address</h5>
+                        <p class="text-muted mb-0">123 Legal Street<br>Law City, LC 12345<br>United States</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-card text-center p-4 h-100 bg-white shadow-sm rounded">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-phone fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Phone Numbers</h5>
+                        <p class="text-muted mb-0">Main: +1 (555) 123-4567<br>Emergency: +1 (555) 987-6543<br>Fax: +1 (555) 123-4568</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-card text-center p-4 h-100 bg-white shadow-sm rounded">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-envelope fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Email Address</h5>
+                        <p class="text-muted mb-0">info@legalpro.com<br>consultation@legalpro.com<br>support@legalpro.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-8 mb-5">
+                    <div class="contact-form bg-white p-5 rounded shadow">
+                        <div class="text-center mb-4">
+                            <h2 class="display-6 fw-bold">Get Free Consultation</h2>
+                            <p class="lead text-muted">Fill out the form below and we'll get back to you within 24 hours</p>
+                        </div>
+                        
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your first name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your last name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="col-12">
+                                    <label for="legalService" class="form-label">Legal Service Needed <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="legalService" name="legalService" required>
+                                        <option value="">Choose a service...</option>
+                                        <option value="corporate">Corporate Law</option>
+                                        <option value="realestate">Real Estate Law</option>
+                                        <option value="family">Family Law</option>
+                                        <option value="criminal">Criminal Defense</option>
+                                        <option value="personal">Personal Injury</option>
+                                        <option value="estate">Estate Planning</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a legal service.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="urgency" class="form-label">Urgency Level</label>
+                                    <select class="form-select" id="urgency" name="urgency">
+                                        <option value="low">Low - Not urgent</option>
+                                        <option value="medium" selected>Medium - Within a week</option>
+                                        <option value="high">High - Within 24 hours</option>
+                                        <option value="emergency">Emergency - ASAP</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="budget" class="form-label">Estimated Budget Range</label>
+                                    <select class="form-select" id="budget" name="budget">
+                                        <option value="">Prefer not to say</option>
+                                        <option value="under-1000">Under $1,000</option>
+                                        <option value="1000-5000">$1,000 - $5,000</option>
+                                        <option value="5000-10000">$5,000 - $10,000</option>
+                                        <option value="10000-25000">$10,000 - $25,000</option>
+                                        <option value="over-25000">Over $25,000</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Case Details <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" 
+                                              placeholder="Please provide detailed information about your legal matter..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide details about your case.
+                                    </div>
+                                    <div class="form-text">Minimum 50 characters required</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="consent" name="consent" required>
+                                        <label class="form-check-label" for="consent">
+                                            I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#" class="text-primary">Privacy Policy</a> <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree to the terms and conditions.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for legal updates and tips
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Office Information & Map -->
+                <div class="col-lg-4">
+                    <div class="office-info bg-white p-4 rounded shadow mb-4">
+                        <h4 class="fw-bold mb-3">Office Hours</h4>
+                        <div class="office-hours">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Monday - Friday:</span>
+                                <span class="fw-bold">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Saturday:</span>
+                                <span class="fw-bold">9:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Sunday:</span>
+                                <span class="text-muted">Closed</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Emergency:</span>
+                                <span class="text-primary fw-bold">24/7 Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="directions bg-white p-4 rounded shadow mb-4">
+                        <h4 class="fw-bold mb-3">Directions</h4>
+                        <p class="text-muted mb-3">We're conveniently located in the heart of the legal district, easily accessible by public transportation and with ample parking available.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-car text-primary me-2"></i>Free parking available</li>
+                            <li class="mb-2"><i class="fas fa-bus text-primary me-2"></i>Bus stops nearby</li>
+                            <li class="mb-2"><i class="fas fa-train text-primary me-2"></i>5 min walk from metro</li>
+                            <li><i class="fas fa-wheelchair text-primary me-2"></i>Wheelchair accessible</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Map Placeholder -->
+                    <div class="map-container bg-white p-4 rounded shadow">
+                        <h4 class="fw-bold mb-3">Find Us</h4>
+                        <div class="map-placeholder bg-light rounded d-flex align-items-center justify-content-center" style="height: 250px;">
+                            <div class="text-center text-muted">
+                                <i class="fas fa-map fa-3x mb-3"></i>
+                                <p class="mb-0">Interactive Map<br>123 Legal Street, Law City</p>
+                                <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                                    <i class="fas fa-external-link-alt me-1"></i>View in Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold mb-3">Need Immediate Legal Help?</h2>
+                    <p class="lead mb-0">Our emergency legal services are available 24/7 for urgent matters that can't wait.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="tel:+15559876543" class="btn btn-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Call Emergency Line
+                    </a>
+                    <p class="mt-2 mb-0 small">+1 (555) 987-6543</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-balance-scale me-2"></i>LegalPro Services
+                    </h5>
+                    <p class="text-light">Professional legal services with integrity, expertise, and dedication to client success.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-light text-decoration-none">Corporate Law</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Real Estate</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Family Law</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Criminal Defense</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        123 Legal Street, Law City, LC 12345
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        +1 (555) 123-4567
+                    </p>
+                    <p class="text-light">
+                        <i class="fas fa-envelope me-2"></i>
+                        info@legalpro.com
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 LegalPro Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            
+            const form = document.getElementById('contactForm');
+            
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                // Check message length
+                const message = document.getElementById('message');
+                if (message.value.length < 50) {
+                    message.setCustomValidity('Message must be at least 50 characters long.');
+                } else {
+                    message.setCustomValidity('');
+                }
+                
+                if (form.checkValidity()) {
+                    // Form is valid, show success message
+                    alert('Thank you for your message! We will contact you within 24 hours.');
+                    form.reset();
+                    form.classList.remove('was-validated');
+                } else {
+                    form.classList.add('was-validated');
+                }
+            });
+            
+            // Real-time message validation
+            document.getElementById('message').addEventListener('input', function() {
+                if (this.value.length >= 50) {
+                    this.setCustomValidity('');
+                } else {
+                    this.setCustomValidity('Message must be at least 50 characters long.');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

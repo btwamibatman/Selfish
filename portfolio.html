@@ -3,82 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio - LegalPro Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">My Portfolio</div>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-balance-scale me-2"></i>LegalPro Services
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="main-container">
-        <main class="projects-area">
-            <h2>My Projects</h2>
-            
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=250&h=150&fit=crop&crop=center" alt="Website Design Project">
-                <div class="card-content">
-                    <h3>Website Design</h3>
-                    <p>A modern responsive website built with HTML, CSS and JavaScript</p>
-                    <button>View Project</button>
+    <!-- Page Header -->
+    <section class="page-header py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Our Portfolio</h1>
+                    <p class="lead">Successful cases and legal achievements</p>
+                </div>
+                <div class="col-lg-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Portfolio</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=250&h=150&fit=crop&crop=center" alt="Mobile App UI Project">
-                <div class="card-content">
-                    <h3>Mobile App UI</h3>
-                    <p>Clean and user-friendly mobile application interface design</p>
-                    <button>View Project</button>
+    <!-- Filter Tabs -->
+    <section class="filter-section py-4 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <ul class="nav nav-pills justify-content-center" id="portfolioTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">All Cases</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="corporate-tab" data-bs-toggle="pill" data-bs-target="#corporate" type="button" role="tab">Corporate Law</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="realestate-tab" data-bs-toggle="pill" data-bs-target="#realestate" type="button" role="tab">Real Estate</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="family-tab" data-bs-toggle="pill" data-bs-target="#family" type="button" role="tab">Family Law</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Content -->
+    <section class="portfolio py-5">
+        <div class="container">
+            <div class="tab-content" id="portfolioTabContent">
+                <!-- All Cases Tab -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-item">
+                                <div class="portfolio-card h-100 shadow-sm">
+                                    <div class="portfolio-image">
+                                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Corporate merger case" class="img-fluid">
+                                    </div>
+                                    <div class="portfolio-content p-4">
+                                        <div class="portfolio-category mb-2">
+                                            <span class="badge bg-primary">Corporate Law</span>
+                                        </div>
+                                        <h5 class="fw-bold">TechCorp Merger & Acquisition</h5>
+                                        <p class="text-muted mb-3">Successfully facilitated a $50M merger between two technology companies, handling all regulatory compliance and due diligence.</p>
+                                        <div class="case-details">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-success fw-bold">Case Won</span>
+                                                <span class="text-muted small">2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-item">
+                                <div class="portfolio-card h-100 shadow-sm">
+                                    <div class="portfolio-image">
+                                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Real estate litigation" class="img-fluid">
+                                    </div>
+                                    <div class="portfolio-content p-4">
+                                        <div class="portfolio-category mb-2">
+                                            <span class="badge bg-success">Real Estate</span>
+                                        </div>
+                                        <h5 class="fw-bold">Commercial Property Dispute</h5>
+                                        <p class="text-muted mb-3">Resolved a complex commercial property boundary dispute worth $2.3M through successful mediation and negotiation.</p>
+                                        <div class="case-details">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-success fw-bold">Settled</span>
+                                                <span class="text-muted small">2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-item">
+                                <div class="portfolio-card h-100 shadow-sm">
+                                    <div class="portfolio-image">
+                                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Family custody case" class="img-fluid">
+                                    </div>
+                                    <div class="portfolio-content p-4">
+                                        <div class="portfolio-category mb-2">
+                                            <span class="badge bg-info">Family Law</span>
+                                        </div>
+                                        <h5 class="fw-bold">Child Custody Resolution</h5>
+                                        <p class="text-muted mb-3">Achieved favorable custody arrangement for client while maintaining focus on child's best interests throughout proceedings.</p>
+                                        <div class="case-details">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-success fw-bold">Resolved</span>
+                                                <span class="text-muted small">2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-item">
+                                <div class="portfolio-card h-100 shadow-sm">
+                                    <div class="portfolio-image">
+                                        <img src="https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Criminal defense case" class="img-fluid">
+                                    </div>
+                                    <div class="portfolio-content p-4">
+                                        <div class="portfolio-category mb-2">
+                                            <span class="badge bg-warning">Criminal Defense</span>
+                                        </div>
+                                        <h5 class="fw-bold">White Collar Defense</h5>
+                                        <p class="text-muted mb-3">Successfully defended executive against fraud charges, resulting in dismissal of all charges due to insufficient evidence.</p>
+                                        <div class="case-details">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-success fw-bold">Dismissed</span>
+                                                <span class="text-muted small">2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-item">
+                                <div class="portfolio-card h-100 shadow-sm">
+                                    <div class="portfolio-image">
+                                        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Personal injury case" class="img-fluid">
+                                    </div>
+                                    <div class="portfolio-content p-4">
+                                        <div class="portfolio-category mb-2">
+                                            <span class="badge bg-danger">Personal Injury</span>
+                                        </div>
+                                        <h5 class="fw-bold">Auto Accident Settlement</h5>
+                                        <p class="text-muted mb-3">Secured $1.2M settlement for client injured in serious auto accident, covering medical expenses and future care.</p>
+                                        <div class="case-details">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-success fw-bold">Settled</span>
+                                                <span class="text-muted small">2024</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-item">
+                                <div class="portfolio-card h-100 shadow-sm">
+                                    <div class="portfolio-image">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Estate planning case" class="img-fluid">
+                                    </div>
+                                    <div class="portfolio-content p-4">
+                                        <div class="portfolio-category mb-2">
+                                            <span class="badge bg-secondary">Estate Planning</span>
+                                        </div>
+                                        <h5 class="fw-bold">Complex Estate Administration</h5>
+                                        <p class="text-muted mb-3">Successfully administered $5M estate with multiple beneficiaries and international assets, minimizing tax liabilities.</p>
+                                        <div class="case-details">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="text-success fw-bold">Completed</span>
+                                                <span class="text-muted small">2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=250&h=150&fit=crop&crop=center" alt="E-commerce Site Project">
-                <div class="card-content">
-                    <h3>E-commerce Site</h3>
-                    <p>Full-stack online shopping platform with payment integration</p>
-                    <button>View Project</button>
+    <!-- Case Studies Section -->
+    <section class="case-studies py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Detailed Case Studies</h2>
+                <p class="lead text-muted">In-depth analysis of our most significant legal victories</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="case-study-card h-100 bg-white p-4 rounded shadow">
+                        <div class="case-study-header mb-3">
+                            <h4 class="fw-bold text-primary">Landmark Corporate Acquisition</h4>
+                            <div class="case-meta d-flex justify-content-between">
+                                <span class="badge bg-primary">Corporate Law</span>
+                                <span class="text-muted">Value: $50M</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h6 class="fw-bold">Challenge:</h6>
+                            <p class="text-muted mb-3">Our client, a growing technology firm, sought to acquire a competitor to expand market share but faced complex regulatory hurdles and due diligence challenges.</p>
+                            
+                            <h6 class="fw-bold">Solution:</h6>
+                            <p class="text-muted mb-3">We developed a comprehensive acquisition strategy, navigating antitrust regulations, conducting thorough due diligence, and structuring the deal to maximize tax efficiency.</p>
+                            
+                            <h6 class="fw-bold">Result:</h6>
+                            <p class="text-muted mb-3">Successfully completed the $50M acquisition within 6 months, resulting in a 300% increase in our client's market presence and establishing them as an industry leader.</p>
+                            
+                            <div class="case-outcome">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="outcome-stat">
+                                            <h5 class="text-primary fw-bold">6</h5>
+                                            <small class="text-muted">Months</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="outcome-stat">
+                                            <h5 class="text-primary fw-bold">$50M</h5>
+                                            <small class="text-muted">Deal Value</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="outcome-stat">
+                                            <h5 class="text-primary fw-bold">300%</h5>
+                                            <small class="text-muted">Growth</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="case-study-card h-100 bg-white p-4 rounded shadow">
+                        <div class="case-study-header mb-3">
+                            <h4 class="fw-bold text-success">Property Rights Victory</h4>
+                            <div class="case-meta d-flex justify-content-between">
+                                <span class="badge bg-success">Real Estate</span>
+                                <span class="text-muted">Value: $2.3M</span>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h6 class="fw-bold">Challenge:</h6>
+                            <p class="text-muted mb-3">A longstanding boundary dispute between two commercial property owners threatened a major development project worth millions of dollars.</p>
+                            
+                            <h6 class="fw-bold">Solution:</h6>
+                            <p class="text-muted mb-3">We conducted extensive historical research, employed expert surveyors, and utilized alternative dispute resolution methods to avoid costly litigation.</p>
+                            
+                            <h6 class="fw-bold">Result:</h6>
+                            <p class="text-muted mb-3">Achieved an amicable settlement through mediation, preserving business relationships and allowing the development project to proceed on schedule.</p>
+                            
+                            <div class="case-outcome">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="outcome-stat">
+                                            <h5 class="text-success fw-bold">4</h5>
+                                            <small class="text-muted">Months</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="outcome-stat">
+                                            <h5 class="text-success fw-bold">$2.3M</h5>
+                                            <small class="text-muted">Property Value</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="outcome-stat">
+                                            <h5 class="text-success fw-bold">100%</h5>
+                                            <small class="text-muted">Success Rate</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=250&h=150&fit=crop&crop=center" alt="Dashboard Design Project">
-                <div class="card-content">
-                    <h3>Dashboard Design</h3>
-                    <p>Interactive admin dashboard with charts and data visualization</p>
-                    <button>View Project</button>
+    <!-- Success Statistics -->
+    <section class="success-stats py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Our Track Record</h2>
+                <p class="lead text-muted">Numbers that speak to our success</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-trophy fa-3x text-warning"></i>
+                        </div>
+                        <h3 class="display-4 fw-bold text-primary">95%</h3>
+                        <p class="text-muted">Success Rate</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-dollar-sign fa-3x text-success"></i>
+                        </div>
+                        <h3 class="display-4 fw-bold text-primary">$100M+</h3>
+                        <p class="text-muted">Total Settlements</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-gavel fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="display-4 fw-bold text-primary">500+</h3>
+                        <p class="text-muted">Cases Won</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-handshake fa-3x text-info"></i>
+                        </div>
+                        <h3 class="display-4 fw-bold text-primary">1000+</h3>
+                        <p class="text-muted">Satisfied Clients</p>
+                    </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </section>
 
-        <aside class="sidebar">
-            <h3>About Me</h3>
-            <p>I'm a passionate web developer with experience in HTML, CSS, JavaScript and modern frameworks.</p>
-            
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>UI/UX Design</li>
-            </ul>
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-4">Ready to Win Your Case?</h2>
+            <p class="lead mb-4">Join our growing list of successful clients and let us fight for your rights.</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Start Your Case Today</a>
+        </div>
+    </section>
 
-            <h3>Contact Info</h3>
-            <p>Email: gmail.com@asas.com</p>
-            <p>Phone: +00000000000</p>
-        </aside>
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2025 My Portfolio</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-balance-scale me-2"></i>LegalPro Services
+                    </h5>
+                    <p class="text-light">Professional legal services with integrity, expertise, and dedication to client success.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-light text-decoration-none">Corporate Law</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Real Estate</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Family Law</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Criminal Defense</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        123 Legal Street, Law City, LC 12345
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        +1 (555) 123-4567
+                    </p>
+                    <p class="text-light">
+                        <i class="fas fa-envelope me-2"></i>
+                        info@legalpro.com
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 LegalPro Services. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
